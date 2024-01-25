@@ -1,0 +1,201 @@
+{
+    "dataset_name": "Dataset050_Prostate",
+    "plans_name": "nnUNetPlans",
+    "original_median_spacing_after_transp": [
+        999.0,
+        1.0,
+        1.0
+    ],
+    "original_median_shape_after_transp": [
+        1,
+        512,
+        512
+    ],
+    "image_reader_writer": "NaturalImage2DIO",
+    "transpose_forward": [
+        0,
+        1,
+        2
+    ],
+    "transpose_backward": [
+        0,
+        1,
+        2
+    ],
+    "configurations": {
+        "2d": {
+            "data_identifier": "nnUNetPlans_2d",
+            "preprocessor_name": "DefaultPreprocessor",
+            "batch_size": 2,
+            "patch_size": [
+                512,
+                512
+            ],
+            "median_image_size_in_voxels": [
+                512.0,
+                512.0
+            ],
+            "spacing": [
+                1.0,
+                1.0
+            ],
+            "normalization_schemes": [
+                "ZScoreNormalization",
+                "ZScoreNormalization",
+                "ZScoreNormalization"
+            ],
+            "use_mask_for_norm": [
+                false,
+                false,
+                false
+            ],
+            "UNet_class_name": "PlainConvUNet",
+            "UNet_base_num_features": 32,
+            "n_conv_per_stage_encoder": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+            ],
+            "n_conv_per_stage_decoder": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+            ],
+            "num_pool_per_axis": [
+                7,
+                7
+            ],
+            "pool_op_kernel_sizes": [
+                [
+                    1,
+                    1
+                ],
+                [
+                    2,
+                    2
+                ],
+                [
+                    2,
+                    2
+                ],
+                [
+                    2,
+                    2
+                ],
+                [
+                    2,
+                    2
+                ],
+                [
+                    2,
+                    2
+                ],
+                [
+                    2,
+                    2
+                ],
+                [
+                    2,
+                    2
+                ]
+            ],
+            "conv_kernel_sizes": [
+                [
+                    3,
+                    3
+                ],
+                [
+                    3,
+                    3
+                ],
+                [
+                    3,
+                    3
+                ],
+                [
+                    3,
+                    3
+                ],
+                [
+                    3,
+                    3
+                ],
+                [
+                    3,
+                    3
+                ],
+                [
+                    3,
+                    3
+                ],
+                [
+                    3,
+                    3
+                ]
+            ],
+            "unet_max_num_features": 512,
+            "resampling_fn_data": "resample_data_or_seg_to_shape",
+            "resampling_fn_seg": "resample_data_or_seg_to_shape",
+            "resampling_fn_data_kwargs": {
+                "is_seg": false,
+                "order": 3,
+                "order_z": 0,
+                "force_separate_z": null
+            },
+            "resampling_fn_seg_kwargs": {
+                "is_seg": true,
+                "order": 1,
+                "order_z": 0,
+                "force_separate_z": null
+            },
+            "resampling_fn_probabilities": "resample_data_or_seg_to_shape",
+            "resampling_fn_probabilities_kwargs": {
+                "is_seg": false,
+                "order": 1,
+                "order_z": 0,
+                "force_separate_z": null
+            },
+            "batch_dice": true
+        }
+    },
+    "experiment_planner_used": "ExperimentPlanner",
+    "label_manager": "LabelManager",
+    "foreground_intensity_properties_per_channel": {
+        "0": {
+            "max": 255.0,
+            "mean": 183.39273071289062,
+            "median": 189.0,
+            "min": 35.0,
+            "percentile_00_5": 74.0,
+            "percentile_99_5": 250.0,
+            "std": 39.457637786865234
+        },
+        "1": {
+            "max": 255.0,
+            "mean": 129.1850128173828,
+            "median": 126.0,
+            "min": 23.0,
+            "percentile_00_5": 44.0,
+            "percentile_99_5": 246.0,
+            "std": 38.938236236572266
+        },
+        "2": {
+            "max": 255.0,
+            "mean": 178.4316864013672,
+            "median": 178.0,
+            "min": 69.0,
+            "percentile_00_5": 108.0,
+            "percentile_99_5": 244.0,
+            "std": 25.424997329711914
+        }
+    }
+}

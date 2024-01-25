@@ -1,0 +1,107 @@
+[
+    {
+        "train": [
+            "Image_002",
+            "Image_003",
+            "Image_004",
+            "Image_005",
+            "Image_006",
+            "Image_007",
+            "Image_009",
+            "Image_010",
+            "Image_011",
+            "Image_013",
+            "Image_014",
+            "Image_015"
+        ],
+        "val": [
+            "Image_001",
+            "Image_008",
+            "Image_012"
+        ]
+    },
+    {
+        "train": [
+            "Image_001",
+            "Image_002",
+            "Image_003",
+            "Image_005",
+            "Image_006",
+            "Image_008",
+            "Image_010",
+            "Image_011",
+            "Image_012",
+            "Image_013",
+            "Image_014",
+            "Image_015"
+        ],
+        "val": [
+            "Image_004",
+            "Image_007",
+            "Image_009"
+        ]
+    },
+    {
+        "train": [
+            "Image_001",
+            "Image_002",
+            "Image_003",
+            "Image_004",
+            "Image_005",
+            "Image_006",
+            "Image_007",
+            "Image_008",
+            "Image_009",
+            "Image_010",
+            "Image_012",
+            "Image_014"
+        ],
+        "val": [
+            "Image_011",
+            "Image_013",
+            "Image_015"
+        ]
+    },
+    {
+        "train": [
+            "Image_001",
+            "Image_002",
+            "Image_003",
+            "Image_004",
+            "Image_006",
+            "Image_007",
+            "Image_008",
+            "Image_009",
+            "Image_011",
+            "Image_012",
+            "Image_013",
+            "Image_015"
+        ],
+        "val": [
+            "Image_005",
+            "Image_010",
+            "Image_014"
+        ]
+    },
+    {
+        "train": [
+            "Image_001",
+            "Image_004",
+            "Image_005",
+            "Image_007",
+            "Image_008",
+            "Image_009",
+            "Image_010",
+            "Image_011",
+            "Image_012",
+            "Image_013",
+            "Image_014",
+            "Image_015"
+        ],
+        "val": [
+            "Image_002",
+            "Image_003",
+            "Image_006"
+        ]
+    }
+]
